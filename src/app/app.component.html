@@ -1,0 +1,18 @@
+<hello [version]="0.2" ></hello>
+ 
+ <ul>
+   <li>
+      <a routerLink="/home" routerLinkActive="active">home</a></li>
+    <li>
+      <a routerLink="/admin" routerLinkActive="active">admin</a></li>
+    <li>
+      <a routerLink="/login" routerLinkActive="active">login</a></li>
+ </ul>
+ <br>
+<button (click)="logout()" *ngIf="auth.login">logout</button>
+<br>
+
+<button  [@buttonState]="state"  (click)='toggleState()'> Change State </button>
+<div class="container">
+<router-outlet></router-outlet>
+</div>

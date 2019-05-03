@@ -1,0 +1,9 @@
+<p>
+login works!
+</p>
+
+<button *ngIf="!auth.login" (click)="login()">login</button>
+
+<p *ngIf="auth.login" >
+  Application is logged in !
+</p>
